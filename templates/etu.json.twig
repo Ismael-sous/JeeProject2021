@@ -1,0 +1,15 @@
+{% block body %}
+{#{ "Identifiant = ": "{{ etudiant.id }}",
+    "Nom = ": "{{ etudiant.nameE }}"}#}
+
+
+{% endblock %}
+{% block title %}
+
+{% autoescape %}
+
+   "L'identifiant de ce patient est {{ patient.id }}, son nom est {{ patient.name }}. Il est {{ patient.resultat.intitule }}"
+{% endautoescape %}
+
+{% endblock %}
+

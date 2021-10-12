@@ -1,0 +1,26 @@
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+
+{
+    "liste": [
+
+        {% for patient in liste %}
+
+
+        "nom":"{{ patient.name |nl2br}}",
+        "id:": "{{ patient.id }}"
+
+
+        {% if not loop.last %}, {% endif %}
+
+        {% endfor %}
+    ]
+
+}
+
+
+{% endblock %}
+
